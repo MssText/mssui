@@ -1,6 +1,6 @@
 {
   "name": "mssui",
-  "version": "0.1.7",
+  "version": "0.1.5",
   "main": "lib/ml-element-ui.common.js",
   "files": [
     "lib",
@@ -13,6 +13,7 @@
     "build:component": "webpack --config build/webpack.component.js",
     "build:cjs": "webpack --config build/webpack.common.js",
     "clean": "rimraf lib",
+    "pub": "sh build/bin/release.sh",
     "build": "npm run clean && npm run build:component && npm run build:cjs && npm run build:theme",
     "lint": "vue-cli-service lint"
   },
