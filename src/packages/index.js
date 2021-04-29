@@ -2,7 +2,6 @@ import components from "@/components";
 import MlMessage from "@/packages/message/index";
 
 const MElement = {
-  // eslint-disable-next-line no-unused-vars
   install: function (Vue, opts = {}) {
     components.forEach((component) => {
       Vue.component(component.name, component);
