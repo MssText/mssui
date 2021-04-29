@@ -20,4 +20,9 @@ const MElement = {
   ...components,
 };
 
+// 支持CDN引入
+if (typeof window !== "undefined" && window.Vue) {
+  MElement.install(window.Vue);
+}
+
 export default MElement;

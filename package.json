@@ -6,15 +6,18 @@
     "lib",
     "src/packages"
   ],
+  "unpkg": "lib/index.js",
+  "style": "lib/theme-chalk/index.css",
   "scripts": {
     "serve": "vue-cli-service serve",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.demo.js",
     "build:theme": "gulp build --gulpfile gulpfile.js",
     "build:component": "webpack --config build/webpack.component.js",
     "build:cjs": "webpack --config build/webpack.common.js",
+    "build:umd": "webpack --config build/webpack.umd.js",
     "clean": "rimraf lib",
     "pub": "sh build/bin/release.sh",
-    "build": "npm run clean && npm run build:component && npm run build:cjs && npm run build:theme",
+    "build": "npm run clean && npm run build:component && npm run build:cjs && npm run build:umd && npm run build:theme",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -50,8 +53,8 @@
     "sass": "^1.32.8",
     "sass-loader": "^8.0.2",
     "style-loader": "^2.0.0",
-    "terser-webpack-plugin": "^5.1.1",
-    "uglifyjs-webpack-plugin": "^2.2.0",
+    "terser-webpack-plugin": "^4.2.3",
+    "uglifyjs-webpack-plugin": "^2.1.1",
     "uppercamelcase": "^3.0.0",
     "url-loader": "^4.1.1",
     "vue-i18n": "^8.24.3",
