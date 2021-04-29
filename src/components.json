@@ -1,0 +1,14 @@
+{
+  "alert": "./src/packages/alert/index.js",
+  "avatar": "./src/packages/avatar/index.js",
+  "backtop": "./src/packages/backtop/index.js",
+  "badge": "./src/packages/badge/index.js",
+  "breadcrumb": "./src/packages/breadcrumb/index.js",
+  "breadcrumb-item": "./src/packages/breadcrumb-item/index.js",
+  "button": "./src/packages/button/index.js",
+  "card": "./src/packages/card/index.js",
+  "divider": "./src/packages/divider/index.js",
+  "icon": "./src/packages/icon/index.js",
+  "link": "./src/packages/link/index.js",
+  "tag": "./src/packages/tag/index.js"
+}

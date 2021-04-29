@@ -1,0 +1,58 @@
+
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(alert) {
+  width: 100%;
+  padding: $--alert-padding;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: $--alert-border-radius;
+  position: relative;
+  color: $--color-success;
+  background-color: $--alert-success-color;
+  overflow: hidden;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  transition: opacity .2s;
+
+  & [class*="ml-icon-"] {
+    & + div {
+      margin-left: 5px;
+    }
+  }
+
+  @include m(success) {
+    &.is-light {
+      background-color: $--alert-success-color;
+      color: $--color-success;
+
+      .ml-alert__description {
+        color: $--color-success;
+      }
+    }
+  }
+
+  @include e(icon) {
+    font-size: $--alert-icon-size;
+    width: $--alert-icon-size;
+  }
+
+  @include e(title) {
+    font-size: $--alert-title-font-size;
+    line-height: 18px;
+    @include when(bold) {
+      font-weight: bold;
+    }
+  }
+
+  @include e(closebtn) {
+    font-size: $--alert-close-font-size;
+    opacity: 1;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,48 @@
+@import 'common/var.scss';
+@import 'mixins/mixins.scss';
+
+@include b(button) {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;  
+  cursor: pointer;
+  background: $--button-default-background-color;
+  border: $--border-base;
+  border-color: $--button-default-border-color;
+  color: $--button-default-font-color;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: .1s;
+  font-weight: $--button-font-weight;
+  & + & {
+    margin-left: 10px;
+  }
+  @include button-size($--button-padding-vertical, $--button-padding-horizontal, $--button-font-size, $--button-border-radius);
+  &:active {
+   opacity: 0.7;
+  }
+
+  & [class*="ml-icon-"] {
+    & + span {
+      margin-left: 5px;
+    }
+  }
+
+  @include when(round) {
+    border-radius: 20px;
+    padding: 12px 23px;
+  }
+  @include when(circle) {
+    border-radius: 50%;
+    padding: $--button-padding-vertical;
+  }
+  @include m(primary) {
+    @include button-variant($--button-primary-font-color, $--button-primary-background-color, $--button-primary-border-color);
+  }
+  @include m(success) {
+    @include button-variant($--button-success-font-color, $--button-success-background-color, $--button-success-border-color);
+  }
+}

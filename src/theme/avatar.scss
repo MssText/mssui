@@ -1,0 +1,34 @@
+
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(avatar) {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  color: $--avatar-font-color;
+  width: $--avatar-large-size;
+  height: $--avatar-large-size;
+  background: $--avatar-background-color;
+  line-height: $--avatar-large-size;
+  font-size: $--avatar-text-font-size;
+
+  > img {
+    display: block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  @include m(circle) {
+    border-radius: 50%;
+  }
+
+  @include m(square) {
+    border-radius: $--avatar-border-radius;
+  }
+
+  @include m(icon) {
+    font-size: $--avatar-icon-font-size;
+  }
+}
