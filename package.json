@@ -1,6 +1,6 @@
 {
   "name": "mssui",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "main": "lib/ml-element-ui.common.js",
   "files": [
     "lib",
