@@ -4,7 +4,7 @@
     哈哈哈
     <ml-divider></ml-divider>
     哈哈哈
-    <ml-button type="primary" @click="changeLang">{{
+    <ml-button icon="ml-icon-search" type="primary" @click="changeLang">{{
       $i18n.locale === "zh" ? "切换为英文" : "切换成中文"
     }}</ml-button>
   </div>
