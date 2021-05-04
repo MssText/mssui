@@ -9,7 +9,8 @@
   "unpkg": "lib/index.js",
   "style": "lib/theme-chalk/index.css",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "docs:dev": "vuepress dev src/docs",
+    "docs:build": "vuepress build src/docs",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.demo.js",
     "build:theme": "gulp build --gulpfile gulpfile.js",
     "build:component": "webpack --config build/webpack.component.js",
@@ -60,6 +61,7 @@
     "vue-i18n": "^8.24.3",
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "^2.6.12",
+    "vuepress": "^1.8.2",
     "webpack": "^4.14.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.11"
