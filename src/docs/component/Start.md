@@ -45,7 +45,7 @@ new Vue({
 ```
 这样引入后，mssui所有的组件就都自动注册为全局组件，你可以在项目的任意页面进行使用
 
-### 1.按需引入
+### 2.按需引入
 考虑到有的用户只用到mssui的几个组件，但是却要引入所有的组件，所以mssui也提供按需引入的方式
 首先，安装babel-plugin-component
 ```js
@@ -69,7 +69,7 @@ module.exports = {
   ]
 }
 ```
-不如你仅仅使用了`Button`组件，你可以在`main.js`中这样做：
+比如你仅仅使用了`Button`组件，你可以在`main.js`中这样做：
 ```js
 import Vue from 'vue'
 import App from './App.vue'

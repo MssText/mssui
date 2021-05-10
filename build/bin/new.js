@@ -44,7 +44,6 @@ const Files = [
     filename: "index.js",
     content: `import Ml${ComponentName} from "./main";
 
-/* istanbul ignore next */
 Ml${ComponentName}.install = function (Vue) {
   Vue.component(Ml${ComponentName}.name, Ml${ComponentName});
 };

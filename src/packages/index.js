@@ -1,5 +1,6 @@
 import components from "@/components";
 import MlMessage from "@/packages/message/index";
+import locale from "@/locale";
 
 const MElement = {
   install: function (Vue, opts = {}) {
@@ -9,6 +10,14 @@ const MElement = {
 
     // 全局挂载组件方法
     Vue.prototype.$message = MlMessage;
+
+    // 国际化处理 兼容vuei18n
+    if (opts.locale) {
+      locale.use(opts.locale);
+    }
+    if (opts.i18n) {
+      locale.i18n(opts.i18n);
+    }
 
     // 全局的默认配置
     Vue.prototype.$MlElement = {
