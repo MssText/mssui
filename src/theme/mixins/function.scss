@@ -3,14 +3,14 @@
 /* BEM support Func
  -------------------------- */
 
- // wapper => wapp
+ // inspect 方法 用字符串的方式输出表达式
 @function selectorToString($selector) {
   $selector: inspect($selector);
   $selector: str-slice($selector, 2, -2);
   @return $selector;
 }
 
-// 
+// 是否包含 --
 @function containsModifier($selector) {
   $selector: selectorToString($selector);
 
@@ -21,6 +21,7 @@
   }
 }
 
+// 是否包含 is-
 @function containWhenFlag($selector) {
   $selector: selectorToString($selector);
 
@@ -31,6 +32,7 @@
   }
 }
 
+// 是否包含 :
 @function containPseudoClass($selector) {
   $selector: selectorToString($selector);
 
@@ -41,6 +43,8 @@
   }
 }
 
+
+// 满足包含 -- 、 is-、 : 的其中一种情况就返回true 否则返回false
 @function hitAllSpecialNestRule($selector) {
 
   @return containsModifier($selector) or containWhenFlag($selector) or containPseudoClass($selector);

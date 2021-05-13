@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <ml-button icon="ml-icon-search" type="primary">{{ confirm }}</ml-button>
+    <ml-button icon="ml-icon-search" type="primary" circle>{{
+      confirm
+    }}</ml-button>
     <ml-button type="info" @click="changeLang">{{ lang }}</ml-button>
   </div>
 </template>
@@ -28,11 +30,9 @@ export default {
     },
     changeLang() {
       if (this.$i18n.locale === "zh") {
-        console.log("11111");
         this.$i18n.locale = "en";
         this.lang = "切换为中文";
       } else {
-        console.log("触发了这个函数");
         this.$i18n.locale = "zh";
         this.lang = "切换为英语";
       }

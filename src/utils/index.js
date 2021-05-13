@@ -38,3 +38,24 @@ export function extend(to, from) {
   }
   return to;
 }
+
+// 获取.vue文件中的 script
+export function stripScript(content) {
+  const result = content.match(/<(script)>([\s\S]+)<\/\1>/);
+  return result && result[2] ? result[2].trim() : "";
+}
+
+// 获取.vue 文件中的 style
+export function stripStyle(content) {
+  const result = content.match(/<(style)\s*>([\s\S]+)<\/\1>/);
+  return result && result[2] ? result[2].trim() : "";
+}
+
+// 获取.vue文件中的 template
+export function stripTemplate(content) {
+  content = content.trim();
+  if (!content) {
+    return content;
+  }
+  return content.replace(/<(script|style)[\s\S]+<\/\1>/g, "").trim();
+}

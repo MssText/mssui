@@ -1,8 +1,8 @@
 <template>
-  <DemoBlock>
+  <div>
     <ml-button type="primary" @click="handleMessage('primary')">主要按钮</ml-button>
     <ml-button type="success" @click="handleMessage('success')">成功按钮</ml-button>
-  </DemoBlock>
+  </div>
 </template>
 
 <script>
