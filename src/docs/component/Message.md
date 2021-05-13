@@ -11,6 +11,7 @@
 可以直接通过`this.$message`进行调用
 
 :::
+
 <demo-block>
 
 <message-demo-base slot="source"></message-demo-base>

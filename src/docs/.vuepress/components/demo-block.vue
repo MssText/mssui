@@ -169,7 +169,7 @@ export default {
       const highlight2 = this.$slots.default
       if (highlight2 && highlight2[0]) {
         let code = ''
-        let cur = highlight2[2]
+        let cur = highlight2[2] || {}
         if (cur.elm && cur.elm.children[0]) {
           console.log('默认插槽的值为====：', cur.elm.children[0]);
           code = cur.elm.children[0].innerText

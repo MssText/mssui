@@ -1,4 +1,3 @@
-import DemoBlock from './components/demo-block'
 import components from '@/components.js'
 import Message from '@/packages/message/index'
 import '../../theme/index.scss'
@@ -10,5 +9,4 @@ export default ({
       Vue.component(component.name, component);
     })
     Vue.prototype.$message = Message
-    Vue.component(DemoBlock.name, DemoBlock);
 }
