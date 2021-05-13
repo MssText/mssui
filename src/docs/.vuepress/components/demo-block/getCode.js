@@ -24,10 +24,8 @@ export default {
         css: cssTpl,
         html: resourcesTpl
       }
-      const form = document.getElementById('fiddle-form') || document.createElement('form')
-      while (form.firstChild) {
-        form.removeChild(form.firstChild)
-      }
+      // see： https://blog.codepen.io/documentation/prefill/
+      const form = document.createElement('form')
       form.method = 'POST'
       form.action = 'https://codepen.io/pen/define/'
       form.target = '_blank'
@@ -39,8 +37,9 @@ export default {
       input.setAttribute('value', JSON.stringify(data))
       form.appendChild(input)
       document.body.appendChild(form)
-
       form.submit()
+
+      document.body.removeChild(form)
     }
   }
 }
