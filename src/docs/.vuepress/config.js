@@ -31,6 +31,10 @@ module.exports = {
             children: [
               '/component/Button',
               '/component/Message',
+              '/component/Alert',
+              '/component/Card',
+              '/component/Link',
+              '/component/Backtop',
             ]
           }
         ]

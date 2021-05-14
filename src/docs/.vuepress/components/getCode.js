@@ -4,7 +4,6 @@ export default {
   methods: {
     goCodepen () {
       const { script, html, style } = this.codepen
-      console.log(html)
       const resourcesTpl = `
 <script src="https://unpkg.com/vue/dist/vue.js"><\/script>
 <!-- 引入样式 -->

@@ -1,7 +1,9 @@
 <template>
   <div>
-    <ml-button type="primary" @click="handleMessage('primary')">主要按钮</ml-button>
-    <ml-button type="success" @click="handleMessage('success')">成功按钮</ml-button>
+    <ml-button type="text" @click="handleMessage('primary')">消息</ml-button>
+    <ml-button type="text" @click="handleMessage('success')">成功</ml-button>
+    <ml-button type="text" @click="handleMessage('warning')">警告</ml-button>
+    <ml-button type="text" @click="handleMessage('error')">错误</ml-button>
   </div>
 </template>
 
@@ -10,9 +12,11 @@
     name: 'message-demo-base',
     methods: {
       handleMessage (type) {
+        let message = type == 'success' ? '成功' 
+        : type == 'primary' ? '主要' :  type == 'warning' ? '警告' : '错误'
         this.$message({
-          message: type == 'success' ? '这是一条普通的消息' : '这是一条成功的消息',
-          type: type == 'success' ? 'success' : 'primary'
+          message: `这是一个条${message}消息`,
+          type: type == 'success' ? 'success' : type == 'primary' ? 'primary' :  type == 'warning' ? 'warning' : 'error'
         })
       }
     }

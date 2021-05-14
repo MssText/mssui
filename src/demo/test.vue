@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <ml-alert title="警告提示的文案" type="warning"> </ml-alert>
     <ml-button icon="ml-icon-search" type="primary" circle>{{
       confirm
     }}</ml-button>

@@ -10,6 +10,9 @@ $--border-color-base: #DCDFE6 !default;
 $--color-text-placeholder: #C0C4CC !default;
 $--color-text-regular: #606266 !default;
 $--color-black: #000000 !default;
+$--color-success: #67C23A !default;
+$--color-warning: #E6A23C !default;
+$--color-danger: #F56C6C !default;
 $--border-color-lighter: #EBEEF5 !default;
 $--color-text-secondary: #909399 !default;
 $--border-color-extra-light: #F2F6FC !default;
@@ -31,7 +34,6 @@ $--color-success-lighter: mix($--color-white, $--color-success, 90%) !default;
 $--color-warning-lighter: mix($--color-white, $--color-warning, 90%) !default;
 $--color-danger-lighter: mix($--color-white, $--color-danger, 90%) !default;
 $--color-info-lighter: mix($--color-white, $--color-info, 90%) !default;
-$--color-success-lighter: mix($--color-white, $--color-success, 90%) !default;
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
 $--color-danger-light: mix($--color-white, $--color-danger, 80%) !default;
@@ -75,6 +77,10 @@ $--alert-border-radius: $--border-radius-base !default;
 $--alert-success-color: $--color-success-lighter !default;
 $--alert-title-font-size: 13px !default;
 $--alert-close-font-size: 12px !default;
+$--alert-success-color: $--color-success-lighter !default;
+$--alert-info-color: $--color-info-lighter !default;
+$--alert-warning-color: $--color-warning-lighter !default;
+$--alert-danger-color: $--color-danger-lighter !default;
 
 /* Avatar */
 $--avatar-font-color: #fff !default;

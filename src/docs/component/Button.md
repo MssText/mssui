@@ -9,6 +9,6 @@
 
 <button-demo-base slot="source"></button-demo-base>
 
-<<< src/docs/.vuepress/components/button/demo-base.vue
+<<< @/src/docs/.vuepress/components/button/demo-base.vue
 
 </demo-block>
