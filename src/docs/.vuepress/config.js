@@ -56,8 +56,8 @@ module.exports = {
     },
     '/zh/': {
       lang: '简体中文',
-      title: 'VuePress',
-      description: 'Vue 驱动的静态网站生成器'
+      title: 'MSS-UI',
+      description: '基本Vue2.0的组件库'
     }
   }
 }

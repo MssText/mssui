@@ -1,14 +1,14 @@
 ---
 home: true
 heroImage: /mssui.png
-actionText: 快速上手 →
+actionText: Get started quickly →
 actionLink: /component/Instroduce
 features:
-- title: 组件库工程化
-  details: 从0到1搭建一个组件库，工程化如何搭建。
-- title: 组件库性能优化
-  details: 面对不同维度场景的需求，如何提供全局加载和按需加载能力。
-- title: 组件库样式隔离
-  details: 组件之间的样式如何使用BEM规范进行隔离。
+- title: Component library engineering
+  details: build a component library from 0 to 1, and build it for engineering.
+- title: Optimized component library performance
+  details: How to provide global loading and on-demand loading capabilities in the face of the needs of different dimensional scenarios.
+- title: component library style isolation
+  details: How to isolate the styles between components using the BEM specification.
 footer: MIT Licensed | Copyright © 2021-present MSS
 ---
