@@ -6,8 +6,22 @@
     "lib",
     "src/packages"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MssText/mssui.git"
+  },
+  "keywords": [
+    "mssui",
+    "vue",
+    "components"
+  ],
+  "license": "MIT",
+  "homepage": "https://mssui-ahwzcr277-msstext.vercel.app/",
   "unpkg": "lib/index.js",
   "style": "lib/theme-chalk/index.css",
+  "bugs": {
+    "url": "https://github.com/MssText/mssui/issues"
+  },
   "scripts": {
     "docs:dev": "vuepress dev src/docs",
     "docs:build": "vuepress build src/docs",
