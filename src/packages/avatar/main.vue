@@ -37,7 +37,7 @@ export default {
   },
   data() {
     return {
-      isImageExist: false, // 图像是否存在
+      isImageExist: true, // 图像是否存在
     };
   },
   methods: {
